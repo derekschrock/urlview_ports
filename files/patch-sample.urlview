@@ -1,6 +1,14 @@
---- sample.urlview.orig	2015-08-09 19:37:22 UTC
+--- sample.urlview.orig	2013-10-21 20:46:25 UTC
 +++ sample.urlview
-@@ -19,14 +19,11 @@
+@@ -3,7 +3,6 @@
+ # man urlview  <Man page>
+ #
+ # Put this file in: $HOME/.urlview
+-# Put url_handler.sh in: /usr/bin
+ #
+ # You can call 'urlview' while in 'mutt' by pressing the Ctrl b keys.
+ # Put these macros in your $HOME/.muttrc file.
+@@ -19,13 +18,11 @@
  #REGEXP (((http|https|ftp|gopher)|mailto):(//)?[^ >"\t]*|www\.[-a-z0-9.]+)[^ .,;\t>">\):]
  REGEXP (((http|https|ftp|gopher)|mailto)[.:][^ >"\t]*|www\.[-a-z0-9.]+)[^ .,;\t>">\):]
  
@@ -12,10 +20,10 @@
 -#COMMAND netscape -remote 'openURL(%s)'
 -COMMAND url_handler.sh
 +# Command to invoke for selected URL.
- 
++ 
 +#COMMAND lynx %s                            # :VT
 +#COMMAND u=%s; xterm -e lynx $u || lynx $u  # :XT
 +#COMMAND firefox %s 2>/dev/null &           # :XW
  
+ 
  # Quit urlview after launch
- #QUITONLAUNCH
