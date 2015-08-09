@@ -1,6 +1,6 @@
---- ../work/urlview-45443109/sample.urlview	2013-10-21 16:46:25.000000000 -0400
-+++ sample.urlview	2015-08-09 13:57:54.000000000 -0400
-@@ -19,13 +19,11 @@
+--- sample.urlview.orig	2015-08-09 19:37:22 UTC
++++ sample.urlview
+@@ -19,14 +19,11 @@
  #REGEXP (((http|https|ftp|gopher)|mailto):(//)?[^ >"\t]*|www\.[-a-z0-9.]+)[^ .,;\t>">\):]
  REGEXP (((http|https|ftp|gopher)|mailto)[.:][^ >"\t]*|www\.[-a-z0-9.]+)[^ .,;\t>">\):]
  
@@ -12,10 +12,10 @@
 -#COMMAND netscape -remote 'openURL(%s)'
 -COMMAND url_handler.sh
 +# Command to invoke for selected URL.
-+ 
+ 
 +#COMMAND lynx %s                            # :VT
 +#COMMAND u=%s; xterm -e lynx $u || lynx $u  # :XT
 +#COMMAND firefox %s 2>/dev/null &           # :XW
  
- 
  # Quit urlview after launch
+ #QUITONLAUNCH
