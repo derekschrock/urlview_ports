@@ -6,14 +6,14 @@ PORTVERSION=	0.9
 PORTREVISION= 	102013
 CATEGORIES=	textproc www
 
-USE_GITHUB= yes
-GH_ACCOUNT= sigpipe
-GH_TAGNAME= 45443109
-
 MAINTAINER=	udvzsolt@gmail.com
 COMMENT=	URL extractor/launcher
 
 LICENSE=	GPLv2
+
+USE_GITHUB= yes
+GH_ACCOUNT= sigpipe
+GH_TAGNAME= 45443109
 
 GNU_CONFIGURE=	yes
 PLIST_FILES=	bin/urlview \
