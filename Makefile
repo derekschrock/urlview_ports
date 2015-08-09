@@ -3,14 +3,12 @@
 
 PORTNAME=	urlview
 PORTVERSION=	0.9
-PORTREVISION=	7
+PORTREVISION= 	102013
 CATEGORIES=	textproc www
-MASTER_SITES=	ftp://ftp.mutt.org/mutt/contrib/ \
-		ftp://ftp.cs.tu-berlin.de/pub/net/mail/mutt/contrib/ \
-		ftp://ftp.fu-berlin.de/pub/unix/mail/mutt/contrib/ \
-		ftp://ftp.gbnet.net/pub/mutt-international/contrib/ \
-		ftp://ftp.gwdg.de/pub/unix/mail/mutt/international/contrib/ \
-		http://seis.bris.ac.uk/~mexas/
+
+USE_GITHUB= yes
+GH_ACCOUNT= sigpipe
+GH_TAGNAME= 45443109
 
 MAINTAINER=	udvzsolt@gmail.com
 COMMENT=	URL extractor/launcher
