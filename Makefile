@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	urlview
-PORTVERSION=	0.9.2013.10.20
+PORTVERSION=	0.9.20131021
 CATEGORIES=	textproc www
 
 MAINTAINER=	udvzsolt@gmail.com
